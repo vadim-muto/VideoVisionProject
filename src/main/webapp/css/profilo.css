@@ -1,0 +1,354 @@
+html{
+	overflow-y: scroll;
+	overflow-x: hidden;  
+}
+
+#formFeedback{
+	display: none;
+}
+
+#formVideo{
+	display: block;
+}
+.table{
+	width: 100%;
+}
+
+video{
+ width: 100%;
+}
+
+.btn-Quasiprimary{
+	color: #fff !important;
+	background-color: #007bff !important;
+	border-color: #007bff !important; 
+	width: 95%;
+	display: flex;
+	margin-bottom: auto;
+	margin-right: auto;
+}
+
+.btn-Quasidanger{
+	color: #fff !important;
+	background-color: #dc3545 !important;
+	border-color: #dc3545 !important; 
+	margin-bottom: 2%;
+	margin-top: 0% !important;
+}
+
+#inputVideo{
+	display: none;
+}
+
+#inputImg{
+	display: none;	
+}
+
+.gallery{
+	margin-bottom: 10%;
+ }
+ 
+div.gallery img {
+	width: 100%;
+	height: auto;
+}
+ 
+div.desc {
+	padding: 15px;
+	text-align: center;
+}
+ 
+* {
+	box-sizing: border-box;
+}
+ 
+.responsive {
+	padding: 0 6px;
+	width: 24.99999%;
+}
+
+
+#nomeProfilo{
+	color:black;
+	font-weight: bold;
+}
+
+#iscritti{
+	width: 100%;
+}
+
+#cambiaFoto{
+	border-radius: 50%;
+	color:black;
+	background-color: white;
+	padding: 15%;
+	margin-top: 100%;
+}
+
+body{
+	height: 100%;
+	padding:0 !important;
+	background-image: linear-gradient(to right, rgb(250, 255, 252), rgb(56, 83, 255));
+}
+
+#superiore{
+	width: 100%;
+ 	background-image: linear-gradient(to right, rgb(250, 255, 252), rgb(56, 83, 255));
+}
+
+#occhio{
+	width: 40%;
+	height: 100%;
+}
+
+#chooseImage{
+	display: none;
+}
+
+#navProfilo{
+	background-image: linear-gradient(to right, rgb(106, 103, 255), rgb(230, 235, 232));
+	width:80%;
+	height: auto;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+#imgP {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: ghostwhite;
+  object-fit: cover;
+}
+
+.image--cover {
+  width: 115px;
+  height: 115px;
+  border-radius: 50%;
+  background-color: ghostwhite;
+  object-fit: cover;
+}
+
+#nomeProfilo{
+	margin-bottom: -6%;
+}
+
+#iscritti{
+	margin-left: 4%;
+}
+
+#fotoProfilo{
+	width: 20px;
+	height: 10px;
+}
+
+#navLink{
+	background-image: linear-gradient(to right, rgb(106, 103, 255), rgb(230, 235, 232));
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.navLinks > a{
+	margin-left: 0;
+	color:black; 
+	font-weight: bold;
+}
+
+.navLinks > a:hover{
+	margin-left: 0;
+	color: white; 
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+#centrale{
+	padding: 3%;
+	background-color:	white;
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.modal-backdrop {
+	display: none;
+}
+
+#myModalSettings{
+	width: 100%;
+	align-content: left;  
+	padding: 5%;
+} 
+
+.modal-dialog{
+	float:right;
+}
+
+.info{
+	width: 50%;
+	margin-bottom: 2.5%;
+	padding: 0.5%;
+	background-color: #e7f3fe;
+	border-left: 6px solid #2196F3;
+	border-bottom: 3px solid #2196F3;
+	border-radius: 13px 13px 13px 13px;	
+	transition: 0.5s;
+}
+
+.info:hover{
+	box-shadow: 10px 10px grey;
+    transition: 0.5s;
+}
+
+input{
+	border: none;
+	border-bottom: 2px solid #2196F3;
+}
+
+input:disabled{
+	background-color: #ebebeb;
+}
+
+.col-md-5{
+	font-weight: bold;
+	margin-bottom: 1%;
+}
+
+.col-md-6 > p{
+	float: right;
+	color: #2196F3;
+}
+
+.col-md-6 > p:hover{
+	color: #2196F3;
+	text-decoration: underline;
+	cursor: pointer;
+	font-weight: bold;
+	transition: 0.1s;
+}
+
+#conferma:disabled, #cambiaPsw:disabled {
+	border-color: red;
+	color: red;
+}
+
+#eliminaAccount{
+	float: right;
+	color:  #2196F3;
+}
+
+#eliminaAccount:hover{
+	text-decoration: underline;
+	color: red;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+#modalDialogElimina{
+	margin-left: 32.5%;
+	margin-right: 32.5%;
+	width: 35%;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+img {
+  width: 100%; 
+}
+
+.image {
+  width: 100%;
+}
+
+.text {
+  font-size: 10px;
+  padding-left: 20px;
+}
+
+.tabella{
+	border-bottom: 1px solid gray; 
+	overflow-wrap: break-word;
+	width: 100%;
+	margin-left: 0% !important;
+	margin-right: 0% !important;
+	margin-bottom: 2%;
+}
+
+.noButton{
+	background-color: unset;
+	border: 0;
+	border-radius: 0; 
+	font-weight: bold;
+}
+
+.noButton:hover{
+	color:white !important;
+	text-decoration: underline;
+}
+
+.noButton:focus{
+	outline: none;
+}
+
+.btn-danger{
+	margin-top: 15% !important;
+}
+
+#copertinaVideo{
+	width: 60%;
+	height: 60%;
+	margin-left: 20%;
+}
+
+@media screen and (max-width: 776px) {
+	#occhio{
+	  	width: 100%;
+	  	height: 100%;
+	}
+   	#settingsBtn{
+  		margin-bottom:5%;
+  		margin-left: 85%;
+  		
+	}
+	#myModalSettings {
+		width: 100%;
+		align-content: left;  
+		padding: 5%;
+	}
+	
+	#myModalSettings>.modal-dialog{
+		left:-25%; 
+	}
+	.modal-open {
+		padding-right:0 !important;
+	}
+	
+	#navLink{
+		background-image: linear-gradient(to right, rgb(106, 103, 255), rgb(230, 235, 232));
+		width: 80%;
+		margin-left: 10%;
+		margin-right: 10%;
+		display: block;
+	}
+	
+	.tabella{
+		font-size: 0.65rem;
+	}
+	
+	.btn-danger{
+		margin-top: 50%;
+		font-size: 0.4rem !important;
+	}
+}
+
+img{
+	cursor: pointer;
+}
+
+a:hover{
+	cursor: pointer;
+}

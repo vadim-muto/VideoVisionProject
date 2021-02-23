@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <title>VideoVision-Registrati</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/registrazione.css" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="/js/registrazione.js"></script>
+  
+
+</head>
+<body class="bg-light" id="body">
+	
+	<!--  nav prima riga -->
+	<nav class="navbar navbar-expand-sm justify-content-between" id="superiore">
+  		<!-- Brand/logo -->
+		<a class="navbar-brand flex-fill" href="../">
+			<img src="/images/logoVideoVision.png" id="occhio">
+		</a>
+  		<!-- Links -->
+  		<ul class="navbar-nav flex-fill justify-content-end">
+    		<li class="nav-item">
+      			<button type="button" class="btn btn-light" data-toggle="modal" data-target="#myModalSettings" id="settingsBtn"><i class="fa fa-cog"></i></button>
+    		</li>
+  		</ul>
+	</nav>
+	
+	<!-- parte centrale -->
+	<div class="wrapper">
+		<div class="row">
+	  		<div class="col-md-5 form text-dark" id="divColForm">
+	  			<form method="POST" action="registrati">
+                    <div class="container">
+                        <h1>Registrazione</h1>
+                        <p>Gentile utente, per registrarti compila i seguenti campi</p>
+                         <!-- Anagrafica -->
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label><b>Nome</b></label>
+                                <input type="text" class="form-control" id="nome" placeholder="Inserisci Nome" name="nome" required>
+                           </div>
+                            <div class="col-md-6">
+                                <label><b>Cognome</b></label>
+                                <input type="text" class="form-control" id="cognome" placeholder="Inserisci Cognome" name="cognome" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label><b>Data di nascita</b></label>
+                                <input type="date" class="form-control" id="data" name="dataNascita" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label><b>Nome Utente</b></label>
+                        		<input class="form-control" placeholder="Inserisci Nome Utente" name="username" id="utente" required>
+                            </div>
+                        </div>
+                        
+                        <label><b>Email</b></label>
+                        <input type="email" class="form-control" placeholder="Inserisci Email" name="email" id="email" required>
+                    
+                        <label><b>Password</b></label>
+                        <input type="password" class="form-control" id="psw" onkeyup="validator()" name="password" placeholder="Insert password" required>
+                      
+                       
+                    
+                        <label><b>Ripeti Password</b></label>
+                        <input type="password" class="form-control"  placeholder="Ripeti Password" name="ripeti-password" id="psw-repeat" required>
+                         <p id="matchPass"><strong></strong></p>
+                         <strong>Sicurezza Password</strong>
+                         <div id="ProgressBar">
+                         	
+						  <div id="bar">
+						  
+						  </div>
+						  <h6 id="alert">
+						  
+						  </div> 
+                    
+                        <p>Creando un account accetti i nostri di  <a href="#aPopover" id="aPopover" data-toggle="popover" title="Termini & Servizi" data-trigger="focus" data-placement="right" data-content="
+                         Trattamento dati: CONSENSO AI SENSI DEL D.Lgs. n. 196/03. I dati personali inviati saranno utilizzati da
+                          parte di VideoVision nel pieno rispetto del Decreto legislativo n. 196 del 30 giugno 2003 (Nuovo codice della Privacy).
+                           La raccolta dei dati avviene secondo la modalità e nei limiti indicati dalla suddetta legge, per finalità  di marketing e promozionali. 
+                           I dati raccolti non verranno comunicati o diffusi a terzi. In base all'articolo 7 del D.Lgs. n. 196/03 (Diritti dell'interessato),
+                            in ogni momento Lei potrà  avere accesso ai suoi dati chiedendone la modifica o la cancellazione oppure opporsi al loro utilizzo scrivendo 
+                            all'indirizzo sopra riportato. Autorizzo a mantenere nella propria banca dati e ad inviarmi materiale informativo, pubblicitario o
+                             promozionale, inerente la propria attività  e i prodotti commercializzati, nel rispetto della legge N. 196 del 30 giugno 2003 
+                             Nuovo codice della Privacy 'Tutela della Privacy'">Termini & Servizi</a>.</p>
+                            <div id="captcha">
+                           	</div>
+                            <label><b>Inserisci il codice:</b></label>
+                            <div class="form-inline">
+   								<input type="text" class="form-control" id="cpatchaTextBox" placeholder="Captcha" name="email">
+ 								<button type="submit" class="btn btn-danger" id="inviaCaptcha" onclick="validateCaptcha()">Submit</button>
+  							</div>
+  						<br>
+                        <button type="submit" class="btn btn-primary" id="regBtn">Registrati</button>
+                    </div>
+            
+                    <div class="signin text-dark" id="divSignIn">
+                    	<p>Hai già un account? <a href="#">Login</a>.</p>
+                    </div>
+
+                </form>
+	  		</div>
+	  		<div class="col-md-5" id="foto">
+	  			<img src="/images/ComputerConLogoDarkMode.png" id="fotoDestra">
+	  		</div>
+	   </div>
+    </div>
+    
+    <!-- footer -->
+    <div class="bg-secondary footer" id="divFooter">
+	  <p> <strong> Copyright © 2020 VideoVision.</strong> Rotondaro Giovanni - Muto Vadim - Locanto Santo - Iorio Massimo Pio</p>
+	</div>  
+	
+    <!-- Model Settings-->
+    <div class="modal fade" id="myModalSettings">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content text-dark bg-light" id="modalContent">
+        
+                <!-- Modal Header -->
+                <div class="modal-header" id="modalHeader">
+                    <h4 class="modal-title">Impostazioni</h4>
+                    <button type="button" class="close" data-dismiss="modal" id="buttonX">&times;</button>
+                </div>
+        
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item text-dark bg-light" id="switchModal1">
+                            <div class="custom-control custom-switch">
+                                <input type="checkbox" class="custom-control-input" id="customSwitches" onclick="changeColor()">
+                                <label class="custom-control-label" for="customSwitches">Aspetto</label>
+                            </div>
+                        </li>
+                        <li class="list-group-item text-dark bg-light" id="switchModal2">
+                            <a href="#" class="text-dark text-decoration-none" id="aItemModal1">Guida utente</a>
+                        </li>
+                        <li class="list-group-item text-dark bg-light" id="switchModal3">
+                            <a href="#" class="text-dark text-decoration-none" id="aItemModal2">Invia feedback</a>
+                        </li>
+                        <li class="list-group-item text-dark bg-light" id="switchModal4">
+                         <a href="#" class="text-dark text-decoration-none" id="aItemModal3">Fourth item</a>
+                         </li>
+                     </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Registrazione</title>
+    <link rel="stylesheet" href="/css/registrazione.css" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="/js/registrazione.js"></script>
+</head>
+<body id="body">
+     <!-- NavBar prima riga
+     <nav class="navbar navbar-expand-sm bg-light navbar-dark" id="barraSuperiore"> 
+        <div class="col-md-4">
+        <!-- Brand/logo 
+            <a class="navbar-brand" href="#">
+                <img src="/images/logoVideoVision.png" id="logo">
+            </a>
+        </div>
+    </nav>
+
+    <div id="centrale">
+        <div id="divImg">
+            <img src="/images/sfondoPerGiovanni.png" id="img">
+        </div>
+      
+        <div id="rowImg">
+            <div class="content">
+                <form action="action_page.php">
+                    <div class="container">
+                        <h1>Registrazione</h1>
+                        <p>Gentile utente, per registrarti compila i seguenti campi</p>
+
+                        <!-- Anagrafica
+                        <div class="row">
+                            <div class="col-md-4">
+                                <label><b>Nome</b></label>
+                                <input type="text" class="form-control" id="nome" placeholder="Inserisci Nome" name="nome" required>
+                           </div>
+                            <div class="col-md-4">
+                                <label><b>Cognome</b></label>
+                                <input type="text" class="form-control" id="cognome" placeholder="Inserisci Cognome" name="cognome" required>
+                            </div>
+                            <div class="col-md-4">
+                                <label><b>Data di nascita</b></label>
+                                <input type="date" class="form-control" id="data" name="data" required>
+                            </div>
+                        </div>
+
+                        <label><b>Email</b></label>
+                        <input type="email" class="form-control" placeholder="Inserisci Email" name="email" id="email" required>
+                    
+                        <label><b>Password</b></label>
+                        <input type="password" class="form-control" placeholder="Inserisci Password" name="psw" id="psw" required>
+                    
+                        <label><b>Ripeti Password</b></label>
+                        <input type="password" class="form-control" placeholder="Ripeti Password" name="psw-repeat" id="psw-repeat" required>
+                    
+                        <p>Creando un account accetti i nostri di <a href="#">Termini & Privacy</a>.</p>
+                        <button type="submit" class="registerbtn">Registrati</button>
+                    </div>
+            
+                    <div class="signin">
+                    <p>Hai già un account? <a href="#">Login</a>.</p>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-light text-center text-lg-start">
+        <!-- Copyright 
+        <div class="text-center p-3" id="divFooter">
+          © 2020-2021 VideoVision
+          <a class="text-dark" href="#"></a>
+        </div>
+        <!-- Copyright 
+      </footer>
+</body>
+</html>-->

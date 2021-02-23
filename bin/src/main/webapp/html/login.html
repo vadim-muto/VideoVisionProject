@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area riservata</title>
+    <link rel="stylesheet" href="/css/login.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="/js/login.js"></script>
+</head>
+<body id="body">
+     <!-- NavBar prima riga-->
+     <nav class="navbar navbar-expand-sm bg-light navbar-dark" id="barraSuperiore"> 
+        <!-- Brand/logo -->
+        <div class="col-sm-4">
+            <a class="navbar-brand" href="#">
+                <img src="/images/logoVideoVision.png" id="logo">
+            </a>
+        </div>
+    </nav>
+    <div id="centrale">
+       <div id="divImg">
+              <img src="/images/sfondoPerGiovanni.png" id="img">
+        </div>
+      
+    <div id="rowImg">
+        <div class="content">
+            <form action="action_page.php">
+                <div class="container">
+                <h1>Area riservata</h1>
+                <p>Gentile utente, inserisci le credenziali per accedere</p>
+            
+                <label><b>Username</b></label>
+                <input type="text" class="form-control" placeholder="Username" name="username" id="username" required>
+
+                <label><b>Password</b></label>
+                <input type="password" class="form-control" placeholder="Password" name="psw" id="psw" required>
+
+                <button type="submit" class="loginBtn">Accedi</button>
+                </div>
+    
+                <div class="registrati">
+                <p>Non hai un account? <a href="registrazione.html">Registrati</a>.</p>
+                </div>
+
+            </form>
+        </div>
+    </div>
+  </div>
+
+  <footer class="bg-light text-center text-lg-start">
+    <!-- Copyright -->
+    <div class="text-center p-3" id="divFooter">
+      © 2020-2021 VideoVision
+      <a class="text-dark" href="#"></a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+</body>
+</html>

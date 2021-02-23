@@ -1,0 +1,404 @@
+#divBtnPlaylist{
+	margin-bottom: -10%;
+	z-index: 3;
+	display:block;
+	position:absolute;
+}
+
+#formCanale{
+	display: none;
+}
+
+#nomeCanale{
+	display: none;
+}
+
+#formFeedback{
+	display: none;
+}
+
+#pubb{
+	margin-top: -2%;
+	margin-bottom: 1%;
+	margin-left: 10%;
+}
+
+#imgPubb{
+	width: 47%;
+	height: 110px;
+}
+
+#btnAnnuncio{
+	margin-right: 7%;
+}
+
+#inputPaginaAttuale{
+	display: none;
+}
+
+#triangoloVM{
+	margin-left: 40%;
+	color:red;
+}
+
+#iconaMiPiace{
+	margin-right: 10%;
+	
+}
+
+#spanData{
+	margin-top:-6%;
+}
+
+#divMiPiace{
+	margin-bottom: 6%;
+	margin-left: 20%;
+}
+
+#spanVisualizzazioni{
+	height: 20px;
+}
+
+#rigaMipiace{
+	white-space: nowrap; 
+	 overflow: hidden;
+  text-overflow: ellipsis;
+  margin-left: 0%;
+}
+html{
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+#body{
+	padding: 0 !important;
+}
+
+#body.modal-open{
+	overflow: visible;
+	padding:0;
+	margin: 0;
+}
+
+#superiore{
+	z-index: 3;
+	position: sticky;
+	top:0;
+	width: 100%;
+ 	background-image: linear-gradient(to right, rgb(250, 255, 252), rgb(56, 83, 255));
+}
+
+a{
+	width: 20%;
+ 	height: 90%;
+}
+
+#occhio{
+	width: 80%;
+	height: 100%;
+}
+
+.image--cover {
+  width: 55px;
+  height: 52px;
+  border-radius: 50%;
+  background-color: ghostwhite;
+  object-fit: cover;
+  margin-left: -40%;
+}
+
+#loginBtn{
+  	margin-left: -20%;
+}
+
+#settingsBtn{
+  	margin-left: -20%;
+}
+
+.nav-item{
+	padding: 1px;
+}
+
+#searchBar{
+  	width: 50%;
+  	border-radius: 30px 0px 0px 30px;
+}
+
+#searchButton{
+	border-radius: 0px 30px 30px 0px;
+	width: 12%;
+	transition: 0.5s;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%; 
+    background-color:transparent;
+}
+
+#content {
+	z-index: 0;
+	padding: 4%;
+	width: 100%; 
+	background-color: rgb(250, 252, 252);
+}
+
+.category{
+	border-bottom: 3.5px solid gray; 
+	margin-bottom: 1%;
+}
+
+.modal-backdrop {
+	display: none;
+}
+
+.modal-footer{
+	justify-content: space-between !important;
+}
+
+.desc{
+	margin-bottom: 3%;
+}
+
+#inputVideo{
+	display: none;
+}
+
+#inputFoto{
+	display: none;
+}
+	
+#myModal, #myModalSettings{
+	width: 100%;
+	align-content: left;  
+	padding: 5%;
+} 
+	
+#myModal > .modal-dialog,#myModalSettings > .modal-dialog{
+	float:right;
+}
+
+#myModalPlaylist > .modal-dialog{
+	margin-top: 10%;
+}
+	
+.modal-open {
+	padding-right:0 !important;
+    overflow: hidden;
+}
+
+#passdim,#registrati{
+	width: 100%;
+}
+
+span.collapsing{
+	width: 0;
+}
+
+span.collapse{
+	
+	transition: 0.3s;
+	position: fixed;
+	left:85%;
+	width: 15%;
+	background-image: linear-gradient(to top, rgb(250, 255, 252), rgb(56, 83, 255));
+}
+
+#divTutto{
+	margin-top:-2%;
+	margin-bottom: 3%;
+}
+
+#sidebar::-webkit-scrollbar {
+    display: block;
+    width: 8px;
+}
+
+#sidebar::-webkit-scrollbar-thumb {
+    background-color: grey;
+}
+
+span.list-group > a:hover{
+	color: rgb(255, 255, 255);
+	background-color: rgb(156, 171, 252);
+}
+
+span.list-group > .list-group-item:hover{
+	-webkit-text-fill-color: rgb(255, 255, 255);
+	background-color: rgb(156, 171, 252);
+}
+
+span.list-group > .list-group-item.active{
+	background-image: linear-gradient(to right, rgb(156, 171, 252), rgb(56, 83, 255));
+	border-color: rgb(56, 83, 255);
+}
+
+#switchModal1, #switchModal2 {
+	display: block;
+    padding: .75rem 1.25rem;
+    border-bottom: 1px solid rgba(0,0,0,.125);
+}
+
+#sidebar > .list-group{
+	border-radius: 0;
+}
+
+#ultimoLista{
+	margin-bottom: 8%;
+}
+
+#formInformazioni{
+	display: none;
+}
+
+.noButton{
+	background-color: unset;
+	border: 0;
+	border-radius: 0;
+	padding: 0;
+}
+
+.noButton:focus{
+	outline: none;
+}
+
+video{
+ width: 100%;
+ height: 200px;
+ background-color: black;
+}
+
+ .gallery{
+	margin-bottom: 10%;
+ }
+ 
+ div.gallery img {
+	width: 100%;
+	height: auto;
+ }
+ 
+*{
+	box-sizing: border-box;
+}
+ 
+.responsive {
+	padding: 0 6px;
+	float: right;
+	width: 24.99999%;
+}
+ 
+.paginaCorrente{
+	display: none;
+}
+  
+.searchBarNotVisible{
+	display: none;
+}
+
+.vm18{
+	color:red;
+}
+  
+/* MEDIA SCREEN BLOCK */
+@media screen and (max-width: 576px) {
+	a{
+    	width: 100%;	
+  		height: 40%;
+	}
+
+	#occhio{
+	  	width: 100%;
+	  	height: 100%;
+	}
+ 	#loginBtn{
+	  	margin-bottom:5%;
+	  	margin-left: 0%;
+ 	}
+   	#settingsBtn{
+  		margin-bottom:5%;
+  		margin-left: 34%;
+	}
+	#sidebarCollapse{
+		margin-left: 34%;
+	}
+	#myModal, #myModalSettings {
+		width: 100%;
+		align-content: left;  
+		padding: 5%;
+	}
+	
+	#myModal>.modal-dialog{
+		left:-10%;
+	}
+	
+	#myModalSettings>.modal-dialog{
+		left:-25%; 
+	}
+	#formRegistrazione{
+		margin-left: 0;
+	}
+	.modal-open {
+		padding-right:0 !important;
+	}
+
+	#passdim,#registrati{
+		width: 100%;
+	}
+	
+	span.collapse{
+		position: fixed;
+		left:55%;
+		width: 45%;
+		background-image: linear-gradient(to top, rgb(250, 255, 252), rgb(56, 83, 255));
+		overflow: auto;
+		-webkit-overflow-scrolling: touch;
+	}
+}
+
+@media screen and (max-height: 762px) {
+	span.collapse{
+		overflow: auto;
+		-webkit-scrollbar-button: touch;
+	}
+}
+
+@media screen and (max-width: 976px) {		
+	span.collapse{
+		transition: 0.4s;
+		position: fixed;
+		left:75%;
+		width: 25%;
+		background-image: linear-gradient(to top, rgb(250, 255, 252), rgb(56, 83, 255));
+		overflow: auto;
+		-webkit-overflow-scrolling: touch;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	.responsive {
+	  width: 49.99999%;
+	  margin: 6px 0;
+	}
+}
+  
+@media only screen and (max-width: 500px) {
+	.responsive {
+	  width: 100%;
+	}
+}
+
+video::-webkit-media-controls {
+  display: none;
+}
+
+gallery{
+	z-index: 2;
+}
+
+video:hover{
+	cursor: pointer;
+}
+
+a:hover{
+	cursor: pointer;
+}

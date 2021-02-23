@@ -1,0 +1,473 @@
+html{
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+#usernameVideo{
+	display: none;
+}
+
+#myModalPlaylist > .modal-dialog{
+	margin-top: 10%;
+}
+
+#formFeedback{
+	display: none;
+}
+
+#imgCommento{
+	margin-right: 3px;
+	margin-top: 1%;
+	width: 70px;
+	height: 70px;
+}
+
+.navInfo{
+	width: 69%;
+	margin-left: 14.3%;
+	border-bottom: 2px solid rgb(208,210,212);
+	padding: .5rem 1rem;
+	background-color: #f8f9fa !important;
+}
+
+#messaggioVM18{
+	width: 69%;
+	margin-left: 14.3%;
+	border-bottom: 2px solid rgb(208,210,212);
+	padding: .5rem 1rem;
+}
+
+#infoVideo{
+	width: 100%;
+}
+
+#infoCanale{
+	width: 100%;
+}
+
+#aWarning{
+	display: none;
+}
+
+.paginaCorrente{
+	display: none;
+}
+
+#inputVideo{
+	display: none;
+}
+
+#bannerPubblicitario{
+	display: block;
+	position: absolute;
+    margin-top: 2%;
+	margin-left: 13%;
+	opacity: 0.9;
+	z-index: 2;
+}
+
+#formInformazioni{
+	display: none;
+}
+
+#buttonSkipBupplicita{
+	display: none;
+}
+  
+.searchBarNotVisible{
+	display: none;
+}
+
+h4{
+	width: 75%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+h6{
+	width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	font-weight: normal;
+}
+
+#visual{
+	font-weight: bold;
+}
+
+#comment{
+	width: 35%;
+	padding: 0.5%;
+	background-color: #e7f3fe;
+	border-radius: 30px 0px 30px 0px;
+	border-left: 6px solid #2196F3;	
+	border-bottom: 3px solid #2196F3;	
+	transition: 0.5s;
+	margin-bottom: 1%;
+	resize: none;
+	overflow: hidden;
+}
+
+.media-body{
+	overflow: auto;
+}
+
+#comment:focus{
+	outline: none;
+	width: 100%;
+	transition: 0.5s;
+}
+
+.d-flex > .btn-danger{
+	border-radius: 30px 0px 0px 30px !important;
+	margin-left: 70%;
+	margin-right: 1%;
+}
+
+.d-flex > .btn-primary{
+	border-radius: 0px 30px 30px 0px !important;
+}
+	
+input{
+	border: none;
+	border-bottom: 2px solid #2196F3;
+}
+
+#btnLike, #btnDislike{
+	padding: 0 !important;
+}
+
+.noButton{
+	background-color: unset;
+	border: 0;
+	border-radius: 0; 
+	transition: 0.5s;
+}
+
+#btnLike, #btnDislike{
+	padding: 0 !important;
+	transition: 0.5s;
+}
+
+.noButton:focus{
+	outline: none; 
+}
+
+.noButtonDislike:hover{
+	color: red;
+	font-size: 30px;
+	transition: 0.5s;
+}
+
+.noButtonDislike:active{
+	color: red;
+}
+
+.noButtonLike:hover{
+	color: limegreen;
+	font-size: 30px;
+	transition: 0.5s;
+}
+
+.noButtonLike:active{
+	color: limegreen;
+}
+
+.space{
+	margin-right: 3%;
+}
+
+#body.modal-open{
+	overflow: visible;
+	padding:0;
+	margin: 0;
+}
+
+#superiore{
+	position: sticky;
+	top:0;
+	width: 100%;
+ 	background-image: linear-gradient(to right, rgb(250, 255, 252), rgb(56, 83, 255));
+ 	z-index: 3;
+}
+
+a{
+	width: 20%;
+ 	height: 90%;
+}
+
+#occhio{
+	width: 80%;
+	height: 100%;
+}
+
+.image--cover {
+  width: 55px;
+  height: 52px;
+  border-radius: 50%;
+  background-color: ghostwhite;
+  object-fit: cover;
+  margin-left: -40%;
+}
+
+#loginBtn{
+  	margin-left: -20%;
+}
+
+#settingsBtn{
+  	margin-left: -20%;
+}
+
+#searchBar{
+  	width: 50%;
+  	border-radius: 30px 0px 0px 30px;
+}
+
+#searchButton{
+	border-radius: 0px 30px 30px 0px;
+	width: 12%;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%; 
+    background-color:transparent;
+}
+
+#content {
+	padding: 4%;
+	width: 100%; 
+	background-color: white;
+}
+
+.modal-backdrop {
+	display: none;
+}
+
+.modal-footer{
+	justify-content: space-between;
+}
+	
+#myModal, #myModalSettings{
+	width: 100%;
+	align-content: left;  
+	padding: 5%;
+} 
+	
+#myModal > .modal-dialog,#myModalSettings > .modal-dialog{
+	float:right;
+}
+	
+.modal-open {
+	padding-right:0 !important;
+    overflow: hidden;
+}
+
+#switchModal1, #switchModal2 {
+	display: block;
+    padding: .75rem 1.25rem;
+    border-bottom: 1px solid rgba(0,0,0,.125);
+}
+
+#passdim,#registrati{
+	width: 100%;
+}
+
+.collapsing{
+	width: 15%;
+	height:auto;
+	position: relative;
+  	transition-property: width, visibility;
+  	width: 0;
+  	height: auto;
+}
+
+.collapse{
+	transition: 0.3s;
+	position: fixed;
+	left:85%;
+	width: 15%;
+	background-image: linear-gradient(to top, rgb(250, 255, 252), rgb(56, 83, 255));
+}
+
+#sidebar::-webkit-scrollbar {
+    display: block;
+    width: 8px;
+}
+
+#sidebar::-webkit-scrollbar-thumb {
+    background-color: grey;
+}
+
+.list-group > a:hover{
+	color: rgb(255, 255, 255);
+	background-color: rgb(156, 171, 252);
+}
+
+.list-group > .list-group-item:hover{
+	-webkit-text-fill-color: rgb(255, 255, 255);
+	background-color: rgb(156, 171, 252);
+}
+
+.list-group > .list-group-item.active{
+	background-image: linear-gradient(to right, rgb(156, 171, 252), rgb(56, 83, 255));
+	border-color: rgb(56, 83, 255);
+}
+
+#sidebar > .list-group{
+	border-radius: 0;
+}
+
+#ultimoLista{
+	margin-bottom: 8%;
+}
+
+video{
+	width: 100%;
+	margin-left: 20%;
+}
+ 
+.gallery{
+	margin-bottom: 10%;
+}
+
+div.gallery img {
+	width: 100%;
+	height: auto;
+}
+
+div.desc {
+	padding: 10px;
+	text-align: center;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.responsive {
+	width: 70%;
+	padding: 0 6px;
+}
+
+#visual{
+	width: -webkit-fill-available;
+}
+ 
+
+@media screen and (max-width: 576px) {
+	a{
+    	width: 100%;	
+  		height: 40%;
+	}
+	
+	form{
+	  	margin-left: 10%;
+	}
+	
+	#occhio{
+	  	width: 100%;
+	  	height: 100%;
+	}
+	
+ 	#loginBtn{
+	  	margin-bottom:5%;
+	  	margin-left: 0%;
+ 	}
+ 	
+   	#settingsBtn{
+  		margin-bottom:5%;
+  		margin-left: 34%;
+	}
+	
+	#sidebarCollapse{
+		margin-left: 34%;
+	}
+	
+	#myModal, #myModalSettings {
+		width: 100%;
+		align-content: left;  
+		padding: 5%;
+	}
+	
+	#myModal>.modal-dialog{
+		left:-10%;
+	}
+	
+	#myModalSettings>.modal-dialog{
+		left:-25%; 
+	}
+	
+	#formRegistrazione{
+		margin-left: 0;
+	}
+	
+	.modal-open {
+		padding-right:0 !important;
+	}
+
+	#passdim,#registrati{
+		width: 100%;
+	}
+	
+	.collapse{
+		position: fixed;
+		left:55%;
+		width: 45%;
+		background-image: linear-gradient(to top, rgb(250, 255, 252), rgb(56, 83, 255));
+		overflow: auto;
+		-webkit-overflow-scrolling: touch;
+	}
+}
+
+@media screen and (max-height: 762px) {
+	.collapse{
+		overflow: auto;
+		-webkit-scrollbar-button: touch;
+	}
+}
+
+@media screen and (max-width: 976px) {		
+	.collapse{
+		transition: 0.4s;
+		position: fixed;
+		left:75%;
+		width: 25%;
+		background-image: linear-gradient(to top, rgb(250, 255, 252), rgb(56, 83, 255));
+		overflow: auto;
+		-webkit-overflow-scrolling: touch;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	.responsive {
+	  margin: 6px 0;
+	}
+  }
+  
+  @media only screen and (max-width: 500px) {
+	.responsive {
+	  width: 100%;
+	}
+	
+	p {
+		font-size: 0.8rem;
+	}
+	
+	video{
+		margin-left: 0;
+	}
+	
+	#bannerPubblicitario{
+		margin-left: 0;
+	}
+}
+ 
+video::-webkit-media-controls-panel{
+	z-index: 1;
+}
+
+a:hover{
+	cursor: pointer;
+}

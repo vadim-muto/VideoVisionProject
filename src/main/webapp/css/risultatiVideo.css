@@ -1,0 +1,308 @@
+#formCanale{
+	display:none;
+}
+
+#nomeCanale{
+	display:none;
+}
+
+#myModalPlaylist > .modal-dialog{
+	margin-top: 10%;
+}
+
+html{
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+#body{
+	padding:0 !important;
+}
+
+#formFeedback{
+	display: none;
+}
+
+#body.modal-open{
+	overflow: visible;
+	padding: 0;
+	margin: 0;
+}
+
+#superiore{
+	position: sticky;
+	top:0;
+	width: 100%;
+	z-index: 1;
+ 	background-image: linear-gradient(to right, rgb(250, 255, 252), rgb(56, 83, 255));
+}
+
+#imgProfilo.image--cover {
+  width: 55px;
+  height: 52px;
+  border-radius: 50%;
+  background-color: ghostwhite;
+  object-fit: cover;
+  margin-left: 10%;
+}
+
+#imgPr.image--cover{
+	 width: 55px;
+	 height: 52px;
+	 border-radius: 50%;
+	 background-color: ghostwhite;
+	 object-fit: cover;
+	 margin-left: -40%;	
+}
+
+#superiore > a{
+	width: 20%;
+ 	height: 90%;
+}
+
+#occhio{
+	width: 80%;
+	height: 100%;
+}
+
+#loginBtn{
+  	margin-left: -20%;
+}
+
+#settingsBtn{
+  	margin-left: -20%;
+}
+
+#searchBar{
+  	width: 50%;
+  	border-radius: 30px 0px 0px 30px;
+}
+
+#searchButton{
+	border-radius: 0px 30px 30px 0px;
+	width: 12%;
+}
+
+#divPrincipale{
+	display: flex;
+}
+
+video{
+	width: 40%;
+	height: 250px;
+}
+
+#divSpinner{
+	display: none;
+	width: 70px;
+	height: 70px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20%;
+}
+
+#textFiltro{
+	display: none;
+}
+
+#inputPaginaAttuale{
+	display: none;
+}
+
+#inputVideo{
+	display: none;
+}
+
+#listCategory{
+	display: none;
+}
+
+#formInformazioni{
+	display: none;
+}
+
+.noButton{
+	background-color: unset;
+	border: 0;
+	border-radius: 0; 
+}
+
+.noButton:focus{
+	outline: none; 
+}
+
+.paginaCorrente{
+	display: none;
+}
+
+.searchBarNotVisible{
+	display: none;
+}
+
+.modal-backdrop {
+	display: none;
+}
+	
+#myModal, #myModalSettings{
+	width: 100%;
+	align-content: left;  
+	padding: 5%;
+} 
+	
+#myModal > .modal-dialog,#myModalSettings > .modal-dialog{
+	float:right;
+}
+	
+.modal-open {
+	padding:0 !important;
+    overflow: hidden;
+}
+
+.modal-footer{
+	justify-content: space-between;
+}
+
+#passdim,#registrati{
+	width: 100%;
+}
+
+span.collapsing{
+  	width: 0;
+}
+
+span.collapse{
+	transition: 0.3s;
+	position: fixed;
+	left:85%;
+	width: 15%;
+	background-image: linear-gradient(to top, rgb(250, 255, 252), rgb(56, 83, 255));
+}
+
+#sidebar::-webkit-scrollbar {
+    display: block;
+    width: 8px;
+}
+
+#sidebar::-webkit-scrollbar-thumb {
+    background-color: grey;
+}
+
+span.list-group > a:hover{
+	color: rgb(255, 255, 255);
+	background-color: rgb(156, 171, 252);
+}
+
+span.list-group > .list-group-item.active{
+	background-image: linear-gradient(to right, rgb(156, 171, 252), rgb(56, 83, 255));
+	border-color: rgb(56, 83, 255);
+}
+
+span.list-group{
+	border-radius: 0;
+}
+
+#ultimoLista{
+	margin-bottom: 8%;
+}
+
+#primoFiltro,#secondoFiltro,#terzoFiltro,#categoriaUno,#categoriaDue,#categoriaTre{
+	background-color: unset;
+	border: 0;
+	border-radius: 0; 
+}
+
+#primoFiltro,#secondoFiltro,#terzoFiltro,#categoriaUno,#categoriaDue,#categoriaTre:focus{
+	outline: none;
+}
+
+@media screen and (max-width: 576px) {
+	#superiore > a{
+    	width: 100%;	
+  		height: 40%;
+	}
+	form{
+	  	margin-left: 10%;
+	}
+	#occhio{
+	  	width: 100%;
+	  	height: 100%;
+	}
+ 	#loginBtn{
+	  	margin-bottom:5%;
+	  	margin-left: 0%;
+ 	}
+   	#settingsBtn{
+  		margin-bottom:5%;
+  		margin-left: 34%;
+	}
+	#sidebarCollapse{
+		margin-left: 34%;
+	}
+	#myModal, #myModalSettings {
+		width: 100%;
+		align-content: left;  
+		padding: 5%;
+	}
+	
+	#myModal>.modal-dialog{
+		left:-10%;
+	}
+	
+	#myModalSettings>.modal-dialog{
+		left:-25%; 
+	}
+	#formRegistrazione{
+		margin-left: 0;
+	}
+	.modal-open {
+		padding-right:0 !important;
+	}
+
+	#passdim,#registrati{
+		width: 100%;
+	}
+	
+	span.collapse{
+		position: fixed;
+		left:55%;
+		width: 45%;
+		background-image: linear-gradient(to top, rgb(250, 255, 252), rgb(56, 83, 255));
+		overflow: auto;
+		-webkit-overflow-scrolling: touch;
+	}
+}
+
+@media screen and (max-height: 762px) {
+	span.collapse{
+		overflow: auto;
+		-webkit-scrollbar-button: touch;
+	}
+}
+
+@media screen and (max-width: 976px) {		
+	span.collapse{
+		transition: 0.4s;
+		position: fixed;
+		left:75%;
+		width: 25%;
+		background-image: linear-gradient(to top, rgb(250, 255, 252), rgb(56, 83, 255));
+		overflow: auto;
+		-webkit-overflow-scrolling: touch;
+	}
+}
+
+h1,h5{
+	z-index: 0;
+}
+
+video::-webkit-media-controls {
+  display: none;
+}
+
+video:hover{
+	cursor: pointer;
+}
+
+a:hover{
+	cursor: pointer;
+}

@@ -1,0 +1,353 @@
+.carousel{
+  width:100%;
+  background-image: linear-gradient(to right, rgb(130, 150, 255), rgb(56, 83, 255));
+  margin-top: 50px;
+  height: 150px;
+  border-radius: 25px 25px 25px 25px;
+}
+
+.carousel-inner{
+  height: 150px;
+}
+
+.carousel-caption{
+  color: #fff;
+  top: 50%;
+}
+
+#alertFeedback{
+	margin-left: 30%;
+	margin-right: auto;
+}
+
+#risStelle{
+	width: 100%;
+}
+
+#btnFeedback,#btnRisultati{
+	
+	margin-bottom: 10%;
+}
+
+#icon{
+	width: 50%;
+}
+
+#meteo{
+	height: 80px;
+}
+
+#occhio{
+	width: 40%;
+	height: 100%;
+}
+
+#inputGrafica, #inputTheme, #inputIntuitivita, #inputAccount, #inputStelle{
+	display: none;
+}
+
+html{
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 100%;
+}
+
+body{
+	background-color: white !important;
+	padding: 0 !important;
+}
+
+#body.modal-open{
+	overflow: visible;
+	padding: 0;
+	margin: 0;
+}
+
+#superiore{
+	width: 100%;
+ 	background-image: linear-gradient(to right, rgb(250, 255, 252), rgb(56, 83, 255));
+}
+
+#settingsBtn{
+  	margin-left: -20%;
+}
+
+#email{
+	width: 80%;
+}
+
+.wrapper {
+    width: 100%;
+    padding-bottom: 10%;
+    
+}
+
+.form{
+	margin-left: 5%;
+	width: 100%;
+}
+
+#fotoDestra{
+	margin-top:-10%;
+	margin-left:10%;
+	width: 100%;
+	height: 80%;
+}
+
+.row{
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.wrapper{
+	margin-top: 5%;
+}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   color:  white;
+   text-align: left;
+   padding: 1%;
+}
+
+.modal-backdrop {
+	display: none;
+}
+	
+#myModalSettings{
+	width: 100%;
+	align-content: left;  
+	padding: 5%;
+} 
+	
+.modal-dialog{
+	float: right;
+}
+	
+.modal-open {
+	padding-right:0 !important;
+    overflow: hidden;
+}
+
+#passdim,#registrati{
+	width: 100%;
+}
+
+* {
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+}
+
+*:before, *:after {
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+.clearfix {
+  clear:both;
+}
+
+.text-center {text-align:center;}
+
+a {
+  color: tomato;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #2196f3;
+}
+
+pre {
+	display: block;
+	padding: 9.5px;
+	margin: 0 0 10px;
+	font-size: 13px;
+	line-height: 1.42857143;
+	color: #333;
+	word-break: break-all;
+	word-wrap: break-word;
+	background-color: #F5F5F5;
+	border: 1px solid #CCC;
+	border-radius: 4px;
+}
+
+.header {
+  padding:20px 0;
+  position:relative;
+  margin-bottom:10px;
+}
+
+.header:after {
+  content:"";
+  display:block;
+  height:1px;
+  background:#eee;
+  position:absolute; 
+  left:30%; right:30%;
+}
+
+.header h2 {
+  font-size:3em;
+  font-weight:300;
+  margin-bottom:0.2em;
+}
+
+.header p {
+  font-size:14px;
+}
+
+#a-footer {
+  margin: 20px 0;
+}
+
+.new-react-version {
+  padding: 20px 20px;
+  border: 1px solid #eee;
+  border-radius: 20px;
+  box-shadow: 0 2px 12px 0 rgba(0,0,0,0.1);
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.new-react-version .react-svg-logo {
+  text-align: center;
+  max-width: 60px;
+  margin: 20px auto;
+  margin-top: 0;
+}
+
+.success-box {
+  margin:50px 0;
+  padding:10px 10px;
+  border:1px solid #eee;
+  background:#f9f9f9;
+}
+
+.success-box img {
+  margin-right:10px;
+  display:inline-block;
+  vertical-align:top;
+}
+
+.success-box > div {
+  vertical-align:top;
+  display:inline-block;
+  color:#888;
+}
+
+.rating-stars ul {
+  list-style-type:none;
+  padding:0;
+  
+  -moz-user-select:none;
+  -webkit-user-select:none;
+}
+
+.rating-stars ul > li.star {
+  display:inline-block;  
+}
+
+.rating-stars ul > li.star > i.fa {
+  font-size:2.5em; 
+  color:#ccc;
+}
+
+#modalDialogElimina{
+	margin-left: 32.5%;
+	margin-right: 32.5%;
+	width: 35%;
+}
+
+#s1,#s2,#s3,#s4,#s5{
+	color:grey;
+}
+
+#unaStella,#dueStelle{
+	color:red;
+}
+
+#treStelle{
+	color:orange;
+}
+
+#quattroStelle,#cinqueStelle{
+	color:green;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Codystar:300&display=swap');
+
+.neons h6 {
+  font-size: 3rem;
+  text-align: center;
+  font-weight: bold;
+  -webkit-animation: glow 2s ease-in-out infinite alternate;
+  -moz-animation: glow 2s ease-in-out infinite alternate;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+     from {
+      color: blue;
+    text-shadow: 0 0 10px #00fff2, 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 90px #00fff2;
+  }
+  
+  to {
+     color: gray;
+    text-shadow: 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 80px #00fff2, 0 1 90px #00fff2;
+  }
+}
+
+@media screen and (max-width: 900px) {
+	#modalDialogElimina{
+		margin-left: 32.5%;
+		margin-right: 32.5%;
+		width: 50%;
+		left:15%;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	#fotoDestra{
+		margin:0;
+		width: 100%;
+		height: 80%;
+	}
+	
+	#occhio{
+	  	width: 100%;
+	  	height: 100%;
+	}
+	
+   	#settingsBtn{
+  		margin-bottom:5%;
+  		margin-left: 85%;
+  		
+	}
+	
+	#myModalSettings {
+		width: 100%;
+		align-content: left;  
+		padding: 5%;
+	}
+	
+	#modalDialogElimina{
+		margin-left:80%;
+		width: 70%;
+		left:25%;
+	}
+	
+	#myModalSettings>.modal-dialog{
+		left:-25%; 
+	}
+	
+	.modal-open {
+		padding-right:0 !important;
+	}
+}
